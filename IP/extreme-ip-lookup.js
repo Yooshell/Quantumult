@@ -42,13 +42,13 @@ function Org_Check(para) {
 var body = $response.body;
 var obj = JSON.parse(body);
 var title = obj['country'];
-var subtitle = default_city + default_org;
+var subtitle = default_regionName + default_org;
 
 var index = obj['org'].indexOf('(');
 if (index != -1) {
     subtitle = RegionName_Check(obj['region']) + ' ➠ ' + Org_Check(obj['org'].substring(0, index).trim());
 } else {
-    subtitle = RegionName_Check(obj['region'])) + ' ➠ ' + Org_Check(obj['org']);
+    subtitle = RegionName_Check(obj['region']) + ' ➠ ' + Org_Check(obj['org']);
 }
 
 var ip = obj['query'];
