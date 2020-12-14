@@ -42,7 +42,7 @@ function Isp_Check(para) {
 var body = $response.body;
 var obj = JSON.parse(body)["data"];
 var title = obj['country'];
-var subtitle = default_city + default_isp;
+var subtitle = default_regionName + default_isp;
 
 var index = obj['isp'].indexOf('(');
 if (index != -1) {
