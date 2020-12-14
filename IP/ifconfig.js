@@ -42,7 +42,7 @@ function Org_Check(para) {
 var body = $response.body;
 var obj = JSON.parse(body);
 var title = obj['country'];
-var subtitle = default_city + default_org;
+var subtitle = default_regionName + default_org;
 
 var index = obj['asn_org'].indexOf('(');
 if (index != -1) {
