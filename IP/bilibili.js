@@ -51,7 +51,7 @@ if (index != -1) {
     subtitle = RegionName_Check(obj['province']) + ' ➠ ' + Isp_Check(obj['isp']);
 }
 
-var ip = obj['query'];
+var ip = obj['addr'];
 //var description = obj['isp'] + '\n' + RegionName_Check(obj['regionName']) + '\n' + obj['query'] + '\n' + obj['timezone'];
 var description = obj['country'] + '\n' + RegionName_Check(obj['province']) + '\n' + City_Check(obj['city']) + '\n' + obj['addr'] + '\n' + Isp_Check(obj['isp']);
 
