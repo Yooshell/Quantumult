@@ -46,9 +46,9 @@ var subtitle = default_city + default_org;
 
 var index = obj['asn_org'].indexOf('(');
 if (index != -1) {
-    subtitle = City_Check(obj['city']) + ' ➠ ' + Org_Check(obj['asn_org'].substring(0, index).trim());
+    subtitle = RegionName_Check(obj['region_name']) + ' ➠ ' + Org_Check(obj['asn_org'].substring(0, index).trim());
 } else {
-    subtitle = City_Check(obj['city']) + ' ➠ ' + Org_Check(obj['asn_org']);
+    subtitle = RegionName_Check(obj['region_name']) + ' ➠ ' + Org_Check(obj['asn_org']);
 }
 
 var ip = obj['ip'];
