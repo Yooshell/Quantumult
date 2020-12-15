@@ -1,3 +1,5 @@
+// geo_location_checker=http://api.live.bilibili.com/ip_service/v1/ip_service/get_ip_addr, https://raw.githubusercontent.com/Hooshell/Quantumult/master/IP/bilibili.js
+
 if ($response.statusCode != 200) {
     $done(Null);
 }
