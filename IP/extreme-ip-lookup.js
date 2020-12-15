@@ -1,3 +1,5 @@
+// geo_location_checker=http://extreme-ip-lookup.com/json/, https://raw.githubusercontent.com/Hooshell/Quantumult/master/IP/extreme-ip-lookup.js
+
 if ($response.statusCode != 200) {
     $done(Null);
 }
