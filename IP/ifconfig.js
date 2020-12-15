@@ -1,3 +1,5 @@
+// geo_location_checker=http://ifconfig.co/json, https://raw.githubusercontent.com/Hooshell/Quantumult/master/IP/ifconfig.js
+
 if ($response.statusCode != 200) {
     $done(Null);
 }
