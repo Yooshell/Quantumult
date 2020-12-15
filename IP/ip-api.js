@@ -1,3 +1,5 @@
+// geo_location_checker=http://ip-api.com/json/, https://raw.githubusercontent.com/Hooshell/Quantumult/master/IP/ip-api.js
+
 if ($response.statusCode != 200) {
     $done(Null);
 }
