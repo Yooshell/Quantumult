@@ -55,6 +55,6 @@ if (index != -1) {
 
 var ip = obj['ip'];
 //var description = obj['isp'] + '\n' + RegionName_Check(obj['regionName']) + '\n' + obj['query'] + '\n' + obj['timezone'];
-var description = obj['country'] + '\n' + RegionName_Check(obj['region_name']) + '\n' + City_Check(obj['city']) + '\n' + obj['ip'] + '\n' + obj['time_zone'] + '\n' + Org_Check(obj['asn_org']);
+var description = obj['country'] + '\n' + RegionName_Check(obj['region_name']) + '\n' + City_Check(obj['city']) + '\n' + obj['ip'] + '\n' + Org_Check(obj['asn_org']) + '\n' + obj['time_zone'];
 
 $done({title, subtitle, ip, description});
