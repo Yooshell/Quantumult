@@ -1,7 +1,5 @@
 USER-AGENT,OneDrive*,OneDrive
 USER-AGENT,OneDriveiOSApp*,OneDrive
-PROCESS-NAME,OneDrive,OneDrive
-PROCESS-NAME,OneDriveUpdater,OneDrive
 DOMAIN-KEYWORD,1drv,OneDrive
 DOMAIN-KEYWORD,onedrive,OneDrive
 DOMAIN-KEYWORD,skydrive,OneDrive
