@@ -32,7 +32,7 @@ Sub_info = type=http-request,pattern=http://sub\.info,script-path=https://raw.gi
   let day_left = getRmainingDays(reset_day);
 
   let local_proxy = "=http, localhost, 6152";
-  let info_list = [`使用: ${used} | ${total}`];
+  let info_list = [`使用: ${used} ➠ ${total}`];
   
   if (day_left) {
     info_list.push(`重置: ${day_left} 天${day_left == 1 ? "" : "后"}`);
