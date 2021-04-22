@@ -35,7 +35,7 @@ Sub_info = type=http-request,pattern=http://sub\.info,script-path=https://raw.gi
   let info_list = [`使用情况: ${used} | ${total}`];
   
   if (day_left) {
-    info_list.push(`流量重置: ${day_left} Day${day_left == 1 ? "" : "s"}`);
+    info_list.push(`流量重置: ${day_left} 天${day_left == 1 ? "" : "之后"}`);
   }
   if (expire) {
     if (/^[\d]+$/.test(expire)) {
