@@ -32,16 +32,16 @@ Sub_info = type=http-request,pattern=http://sub\.info,script-path=https://raw.gi
   let day_left = getRmainingDays(reset_day);
 
   let local_proxy = "=http, localhost, 6152";
-  let info_list = [`使用情况: ${used} | ${total}`];
+  let info_list = [`使用: ${used} | ${total}`];
   
   if (day_left) {
-    info_list.push(`流量重置: ${day_left} 天${day_left == 1 ? "" : "之后"}`);
+    info_list.push(`重置: ${day_left} 天${day_left == 1 ? "" : "之后"}`);
   }
   if (expire) {
     if (/^[\d]+$/.test(expire)) {
       expire = formatTimestamp(expire*1000);
     }
-    info_list.push(`到期时间: ${expire}`);
+    info_list.push(`到期: ${expire}`);
   }
     sendNotification(usage, day_left, expire, params, info_list);
     let body = info_list.map(item => item + local_proxy).join("\n");
