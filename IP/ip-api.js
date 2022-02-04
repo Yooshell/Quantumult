@@ -1,4 +1,4 @@
-// geo_location_checker=http://ip-api.com/json/, https://raw.githubusercontent.com/Hooshell/Quantumult/master/IP/ip-api.js
+// geo_location_checker=http://ip-api.com/json/, https://raw.githubusercontent.com/Yooshell/Quantumult/master/IP/ip-api.js
 
 if ($response.statusCode != 200) {
     $done(Null);
@@ -44,6 +44,8 @@ function Org_Check(para) {
 var body = $response.body;
 var obj = JSON.parse(body);
 var title = obj['country'];
+
+/*
 var subtitle = default_regionName + default_org;
 
 var index = obj['org'].indexOf('(');
@@ -52,6 +54,9 @@ if (index != -1) {
 } else {
     subtitle = RegionName_Check(obj['regionName']) + ' ➠ ' + Org_Check(obj['org']);
 }
+*/
+
+var subtitle = RegionName_Check(obj['regionName']);
 
 var ip = obj['query'];
 //var description = obj['isp'] + '\n' + RegionName_Check(obj['regionName']) + '\n' + obj['query'] + '\n' + obj['timezone'];
